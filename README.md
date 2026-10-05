@@ -100,9 +100,7 @@ A prototipação será realizada no Figma, contendo:
 * Modal do plano PRO
 * Comparação entre os planos Free e PRO
 
-Link do Figma:
-
-Em breve.
+Link do Figma: https://www.figma.com/make/V7uRNd6GvIsFQDUcwVKLSV/RecrutaDEV-mobile-prototype?t=yGP5DuG66eEF4Xam-20&fullscreen=1
 
 ## Tecnologias
 
