@@ -2,21 +2,21 @@ import { useState } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import SwipeCard from "../components/SwipeCard";
-import { candidates } from "../data/candidates";
+import { initialCandidates } from "../data/candidates"; 
 
 export default function Candidatos() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const candidato = candidates[currentIndex];
+  const candidato = initialCandidates[currentIndex]; 
 
   function aprovar() {
-    if (currentIndex < candidates.length - 1) {
+    if (currentIndex < initialCandidates.length - 1) { 
       setCurrentIndex(currentIndex + 1);
     }
   }
 
   function recusar() {
-    if (currentIndex < candidates.length - 1) {
+    if (currentIndex < initialCandidates.length - 1) { 
       setCurrentIndex(currentIndex + 1);
     }
   }
@@ -25,7 +25,6 @@ export default function Candidatos() {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Triagem finalizada</Text>
-
         <Text style={styles.subtitle}>Você analisou todos os candidatos.</Text>
       </View>
     );
@@ -36,10 +35,19 @@ export default function Candidatos() {
       <Text style={styles.title}>RecrutaDEV</Text>
 
       <Text style={styles.counter}>
-        Candidato {currentIndex + 1} de {candidates.length}
+        Candidato {currentIndex + 1} de {initialCandidates.length} 
       </Text>
 
-      <SwipeCard candidate={candidato} onApprove={aprovar} onReject={recusar} />
+      <SwipeCard
+        candidate={candidato}
+        isPriority={false}
+        locked={false}
+        onApprove={aprovar}
+        onReject={recusar}
+        onLocked={() => {}}
+        onPressPhoto={() => {}}
+        onDoubleTap={() => {}}
+      />
 
       <View style={styles.buttons}>
         <TouchableOpacity
@@ -67,49 +75,41 @@ const styles = StyleSheet.create({
     padding: 20,
     justifyContent: "center",
   },
-
   title: {
     fontSize: 30,
     fontWeight: "bold",
     textAlign: "center",
     marginBottom: 5,
   },
-
   counter: {
     textAlign: "center",
     fontSize: 16,
     color: "#666",
     marginBottom: 25,
   },
-
   subtitle: {
     textAlign: "center",
     fontSize: 18,
     color: "#666",
     marginTop: 10,
   },
-
   buttons: {
     flexDirection: "row",
     justifyContent: "space-between",
     gap: 15,
   },
-
   button: {
     flex: 1,
     padding: 16,
     borderRadius: 12,
     alignItems: "center",
   },
-
   rejectButton: {
     backgroundColor: "#555",
   },
-
   approveButton: {
     backgroundColor: "#222",
   },
-
   buttonText: {
     color: "#fff",
     fontSize: 17,

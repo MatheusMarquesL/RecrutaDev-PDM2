@@ -5,7 +5,6 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { CandidatesProvider } from '../context/CandidatesContext';
 export default function TabLayout() {
 
-  ficar atrás deles)
   const insets = useSafeAreaInsets();
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
