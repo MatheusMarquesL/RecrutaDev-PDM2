@@ -147,29 +147,14 @@ RecrutaDEV/
 * React Native Gesture Handler
 * React Native Reanimated
 * Configuração do GestureHandlerRootView
-
-### Em desenvolvimento
-
 * Indicadores visuais de aprovação e recusa
 * Swipe vertical
 * Sistema de candidatos aprovados
 * Sistema de candidatos priorizados
 * Tela do gerente
-* CRUD de candidatos
-* Persistência dos dados
-* Integração com câmera e galeria
 * Sistema Freemium
 * Recursos PRO
-* Revert
 * Interface final
-
-## Telas do Projeto
-
-Os prints das telas serão adicionados após a implementação e finalização da interface.
-
-## Demonstração
-
-O vídeo demonstrando o funcionamento do aplicativo será adicionado posteriormente.
 
 ## Disciplina
 
