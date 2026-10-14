@@ -72,10 +72,6 @@ Dados cadastrados:
 * Foto de perfil
 * Linguagens de programação
 
-Também será utilizado acesso à câmera e à galeria do dispositivo.
-
-O sistema de cadastro e persistência dos candidatos ainda será implementado.
-
 ## Gestos e Animações
 
 O aplicativo utiliza React Native Gesture Handler e React Native Reanimated para implementar interações por gestos e animações.
@@ -115,21 +111,7 @@ Link do Figma: https://www.figma.com/make/V7uRNd6GvIsFQDUcwVKLSV/RecrutaDEV-mobi
 
 ## Estrutura Atual
 
-```text
-RecrutaDEV/
-├── app/
-│   ├── _layout.tsx
-│   ├── index.tsx
-│   └── candidatos.tsx
-├── components/
-│   ├── CandidateCard.tsx
-│   └── SwipeCard.tsx
-├── data/
-│   └── candidates.ts
-└── README.md
-```
-
-## Estado Atual do Projeto
+<img width="314" height="711" alt="image" src="https://github.com/user-attachments/assets/5f35e4e9-3836-42c3-b3b9-cd3a26cd8a8a" />
 
 ### Implementado
 
